@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset="utf-8"></head>
+  <body>
+    <script type="module">
+      import {load} from "https://croquet.io/webshowcase/v1.js";
+      load({
+        title: "INNOVATIVE Showcase", 
+        showcase: "gallery", 
+        cards: [
+          // each item in cards array has a 'place' to specify the location in the art gallery
+          // 'type' is either "image", "pdf", or "video"
+          // 'path' specifies the location of the asset, either as full URL or as path relative to this html file
+          {place: 1, type: "image", path: "https://zenithsocietydocuments.on.drv.tw/zpartners/Innovativebklogo"},
+          {place: 2, type: "pdf", path: "https://zenithsocietydocuments.on.drv.tw/zpartners/innovativePDF.pdf"},
+          {place: 3, type: "video", path: "https://croquet.io/webshowcase/site/CustomerVideo.mp4", muted: false},
+          {place: 4, type: "image", path: "https://croquet.io/webshowcase/site/CustomerLogos.png"},
+          {place: 5, type: "image", path: "https://zenithsocietydocuments.on.drv.tw/zpartners/img1.png", urlLink: "https://www.thesolution.energy"},
+          {place: 6, type: "image", path: "https://zenithsocietydocuments.on.drv.tw/zpartners/img2.png"},
+          {place: 7, type: "image", path: "https://zenithsocietydocuments.on.drv.tw/zpartners/img3.png"},
+          {place: 8, type: "image", path: "https://zenithsocietydocuments.on.drv.tw/zpartners/shopping-mall.png"},
+          {place: 9, type: "image", path: "https://zenithsocietydocuments.on.drv.tw/zpartners/img4.png"},
+        ],
+        privacy: "invite", // "public" or "invite"
+        voiceChat: true,
+        appId: "com.gmail.ourzenithsociety.webshowcase",
+        apiKey: "1p7JBcM1Fv0Ch74geDGgcM032zuDkBr5FJFxfCghy",
+      });
+    </script>
+  </body>
+</html>
